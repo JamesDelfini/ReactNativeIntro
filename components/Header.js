@@ -30,4 +30,8 @@ const styles = StyleSheet.create({
   },
 })
 
+Header.defaultProps = {
+  title: 'Default props is, Hello!',
+}
+
 export default Header
