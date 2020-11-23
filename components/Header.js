@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, Text, StyleSheet, Image } from 'react-native'
 
-const Header = (props) => {
+const Header = ({ title }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>{props.title}</Text>
+      <Text style={styles.text}>{title}</Text>
       <Image
         source={{ uri: 'https://randomuser.me/api/portraits/men/1.jpg' }}
         style={styles.img}
