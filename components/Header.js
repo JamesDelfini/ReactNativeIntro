@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, Text, StyleSheet, Image } from 'react-native'
 
-const App = () => {
+const Header = (props) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>React Native Crash Course</Text>
+      <Text style={styles.text}>{props.title}</Text>
       <Image
         source={{ uri: 'https://randomuser.me/api/portraits/men/1.jpg' }}
         style={styles.img}
@@ -30,4 +30,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default App
+export default Header
