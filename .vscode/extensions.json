@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "equinusocio.vsc-material-theme",
+    "PKief.material-icon-theme",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "CoenraadS.bracket-pair-colorizer-2",
+  ]
+}
