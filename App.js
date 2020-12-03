@@ -3,6 +3,7 @@ import { View, StyleSheet, Text, FlatList } from 'react-native'
 import 'react-native-get-random-values'
 import { v4 as uuidv4 } from 'uuid'
 import Header from './components/Header'
+import ListItem from './components/ListItem'
 
 const App = () => {
   const [items, setItems] = useState([
@@ -29,7 +30,7 @@ const App = () => {
       <Header />
       <FlatList
         data={items}
-        renderItem={({ item }) => <Text>{item.text}</Text>}
+        renderItem={({ item }) => <ListItem item={item} />}
       />
     </View>
   )
